@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Send Tweet
-      uses: Z-M-Huang/TweetOnAction@0.2.3
+      uses: Z-M-Huang/TweetOnAction@0.3.0
       with:
         consumer_key: ${{ secrets.CONSUMER_KEY }}
         consumer_secret: ${{ secrets.CONSUMER_SECRET }}
