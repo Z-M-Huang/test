@@ -11,4 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Test Get Commit
-      run: git log -1 HEAD --pretty=format:%s
+      run: message=$(git log -1 HEAD --pretty=format:%s)
+    - name: Echo
+      run: echo $message
+    
