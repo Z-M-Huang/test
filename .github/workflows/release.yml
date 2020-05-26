@@ -16,5 +16,5 @@ jobs:
         consumer_key: ${{ secrets.CONSUMER_KEY }}
         consumer_secret: ${{ secrets.CONSUMER_SECRET }}
         access_token: ${{ secrets.ACCESS_TOKEN }}
-        token_secret: ${{ secret.TOKEN_SECRET }}
+        token_secret: ${{ secrets.TOKEN_SECRET }}
         content: First Twee on GithubAction!
