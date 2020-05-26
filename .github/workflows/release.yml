@@ -1,0 +1,20 @@
+name: Docker Release CI
+
+on:
+  release: 
+    types: [published]
+
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    name: Tweet
+    steps:
+    - uses: actions/checkout@v2
+    - name: Send Tweet
+      uses: Z-M-Huang/TweetOnAction@0.1.0
+      with:
+        consumer_key: ${{ secrets.CONSUMER_KEY }}
+        consumer_secret: ${{ secrets.CONSUMER_SECRET }}
+        access_token: ${{ secrets.ACCESS_TOKEN }}
+        token_secret: ${{ secret.TOKEN_SECRET }}
+        content: First Twee on GithubAction!
