@@ -17,5 +17,5 @@ jobs:
     - name: okay... I am so good
       with:
         test: ${msg}
-      run: echo "${test}""
+      run: echo "${test}"
     
