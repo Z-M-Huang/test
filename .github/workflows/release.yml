@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Test Get Commit
-      with:
-        test_var : "Commit message $(git log -1 HEAD --pretty=format:%s)"
-      run: echo $test_var
+      run: echo "::set-output name=msg::$(git log -1 HEAD --pretty=format:%s)"
+    - name: Echo Variable
+      run: echo ${msg}
     
