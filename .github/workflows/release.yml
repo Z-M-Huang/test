@@ -13,5 +13,5 @@ jobs:
     - name: Test Get Commit
       run: echo "::set-output name=msg::$(git log -1 HEAD --pretty=format:%s)"
     - name: Echo Variable
-      run: echo ${msg}
+      run: echo "This is evar ${msg}"
     
