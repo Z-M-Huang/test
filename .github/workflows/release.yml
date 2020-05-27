@@ -15,7 +15,7 @@ jobs:
     - name: Echo Variable
       run: echo "This is evar ${msg}"
     - name: okay... I am so good
-      with:
+      env:
         test: ${msg}
       run: echo "${test}"
     
