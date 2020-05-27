@@ -16,6 +16,6 @@ jobs:
       run: echo "This is evar ${msg}"
     - name: okay... I am so good
       env:
-        test: ${{ env.msg }}
+        test: "last try ${{ env.msg }} "
       run: echo "${test}"
     
